@@ -10,7 +10,7 @@
 
     <parent>
         <groupId>com.alecgorge.minecraft</groupId>
-        <artifactId>jsonapi</artifactId>
+        <artifactId>jsonapi-parent</artifactId>
         <version>5.10.0-mc1.15.2-R0.1-SNAPSHOT</version>
     </parent>
 
@@ -46,9 +46,9 @@
             <version>5.3.2</version>
         </dependency>
         <dependency>
-            <groupId>net.milkbowl.vault</groupId>
-            <artifactId>Vault</artifactId>
-            <version>1.7.3</version>
+            <groupId>com.github.MilkBowl</groupId>
+            <artifactId>VaultAPI</artifactId>
+            <version>1.7</version>
         </dependency>
         <dependency>
             <groupId>com.comphenix.protocol</groupId>

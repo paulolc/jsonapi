@@ -4,7 +4,7 @@ version: 5.10.0
 description: Control your server and fetch information from your server.
 website: http://mcjsonapi.com/
 author: Alec Gorge
-depend: [Vault, ProtocolLib]
+depend: [Vault,ProtocolLib]
 softdepend: [RemoteToolkitPlugin, dynmap]
 api-version: 1.15
 commands:

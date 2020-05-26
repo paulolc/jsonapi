@@ -10,10 +10,9 @@
 
     <parent>
         <groupId>com.alecgorge.minecraft</groupId>
-        <artifactId>jsonapi</artifactId>
+        <artifactId>jsonapi-parent</artifactId>
         <version>5.10.0-mc1.15.2-R0.1-SNAPSHOT</version>
     </parent>
-
 
     <organization>
         <name>Alec Gorge</name>
@@ -28,32 +27,18 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spigotVersion>1.15.2-R0.1-SNAPSHOT</spigotVersion>
-        <mcPackage>v1_15_R1</mcPackage>
-        <jsonapiDebug>no</jsonapiDebug>
-        <!--        <spigotBuildDir>${project.build.directory}/spigot</spigotBuildDir>-->
+        <groovy.version>3.0.4</groovy.version>
         <spigotJar>${settings.localRepository}/org/spigotmc/spigot/${spigotVersion}/spigot-${spigotVersion}.jar</spigotJar>
     </properties>
 
-    <repositories>
-        <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
-        </repository>
-        <repository>
-            <id>vault-repo</id>
-            <url>http://nexus.hc.to/content/repositories/pub_releases</url>
-        </repository>
-        <repository>
-            <id>dmulloy2-repo</id>
-            <url>http://repo.dmulloy2.net/nexus/repository/public/</url>
-        </repository>
-        <repository>
-            <id>ess-repo</id>
-            <url>https://ci.ender.zone/plugin/repository/everything/</url>
-        </repository>
-    </repositories>
-
+    <dependencies>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>3.0.0-beta-3</version>
+            <type>pom</type>
+        </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>
